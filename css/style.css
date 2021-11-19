@@ -1,0 +1,660 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a,img,button,i{
+  cursor: pointer;
+}
+
+.color-white{
+  color: #ffff !important;
+}
+
+
+
+/*<========================================= Header ==============================================> */
+.header{
+    background: url("../images/cover_bg.svg");
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+
+.Navbar {
+    background-color: rgba(12, 11, 11, 0.2);
+    display: flex;
+    font-family: sans-serif;
+    color: #ffff;
+    height: 4.2rem;
+   
+  }
+  
+  .logo{
+      color: #fff;
+      opacity: 1;
+      padding: 1.2rem;
+      margin-left: 12rem;
+      font-size: 1.25rem;
+      cursor: pointer;
+  }
+  .Navbar__Link{
+      padding: 1.2rem;
+      font-size: 1.2rem;
+  }
+  .Navbar__Link a{
+      color: #a1aaaa;
+      font-weight:lighter;
+  }
+  .Navbar__Link a:hover{
+    color: #fff;
+    opacity: .8;
+  }
+
+  
+  .Navbar__Items {
+    display: flex;
+    margin-left: 20rem;
+  }
+
+
+  
+  .Navbar__Items--right {
+    margin-left: 1rem;
+    display: flex;
+  }
+  
+  .Navbar__Link-toggle {
+    display: none;
+  }
+
+  .line{
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: #6f7474;
+    opacity: .2;
+    left: 1003px;
+    top: 8px;
+    bottom: 4px;
+    
+  }
+
+/* <==========================================================================> */
+
+  /*<========================================== Cover ====================================================>*/
+  .main-cover{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65%;
+      margin: 12rem auto;
+      color: #ffff;
+      font-family: 'M PLUS 1', sans-serif;
+  }
+  .main-cover .cover-heading{
+      font-size: 4.3rem;
+      padding: 1rem;
+      text-align: center;
+  }
+  .main-cover p{
+      font-size: 1.4rem;
+      color: hsla(0, 0%, 100%,.4);
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .main-cover p a{
+    text-decoration: underline;
+    color: hsla(0, 0%, 100%,.4);
+  }
+
+  .cover-btn{
+      display: flex;
+      padding: 1rem;
+      width: 70%;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+  }
+
+  .cover-btn button{
+    border-radius: 50em;
+    padding: 0.5em;
+    height: 3.4rem;
+    color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.3em;
+  }
+
+
+
+  .btn-1{
+      margin-left: 6rem !important;
+      background: #28cc9e;
+      width: 200px;
+      outline: none;
+      border: none;
+      
+  }
+  .btn-2{
+      background: transparent;
+      width: 190px;
+      border: 1px solid #ffff
+  }
+
+  .btn-1:hover{
+      background: #31d3a5 ;
+  }
+  .btn-2:hover{
+      color: #000;
+      background: #ffff;
+  }
+
+
+/* <======================================================> */
+
+  /*<=============================== Template-info ======================>*/
+  .template-info{
+  
+    width: 33%;
+    height: auto;
+    margin: 5rem auto;
+    padding: 2rem;
+    text-align: justify;
+  
+  }
+
+  .template-heading{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    margin: 2px;
+  }
+  
+  .temp-details{
+    margin: 2px;
+  }
+  .temp-details div{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: rgb(85, 81, 81);
+  }
+
+  .temp-details p{
+    color: #a1aaaa;
+  }
+  /* <==================================================> */
+
+
+
+  /* <============================= Gallery =============================> */
+
+  .gallery{
+    display: flex;
+    justify-content: space-around;
+    background: #ffff;
+    height: auto;
+  }
+
+  .img-gallery{
+    margin: 5rem auto;
+    width: 40%;
+    height: auto;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 260px 260px;
+    grid-row: auto auto; 
+
+  }
+
+  /*<================================================= Zoom in-out Effect ===========================>*/
+ 
+  figure {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+  }
+
+  .hover03 figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .hover03 figure:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+  /* <===================================> */
+
+
+  /* <======================= plus sign on image=========================> */
+
+  a span{
+    display: none;
+  }
+  a:hover{
+    position: relative;
+  }
+
+  a:hover span{
+    padding: 8px;
+    text-align: center;
+    display: block;
+    z-index: 100;
+    background: transparent;
+    left: 12px;
+    width: 170px;
+    position: absolute;
+    top: 75px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 20px;
+  }
+
+ /* <=======================================> */
+
+/* Mobile-template */
+
+.mob-template{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background: url('../images/cover_bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  color: #ffff;
+  position: relative;
+}
+
+.mob-pic{
+  width: 50%;
+}
+.mob-pic img{
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 420px;
+  height: 850px;
+  z-index: 0;
+}
+
+/* list */
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background: #ffff;
+  padding: 3rem;
+  z-index: 20px;
+  justify-content:space-evenly;
+  width: 90%;
+  border: 1px solid #ffff;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.list-item{
+  display: flex;
+  background: #ffff;
+  width: 30%;
+}
+.list-item span i{
+  color: #28cc9e;
+  font-size: 50px;
+  padding: 0.5em;
+}
+
+.list-item .list-details{
+  margin: 10px;
+  padding: .5em;
+}
+
+.list-item .list-details h6{
+  font-size: 1.4rem;
+  padding: 0.3em;
+}
+.list-item .list-details p{
+  padding: 0.3em;
+  color: #a1aaaa;
+}
+
+
+
+
+/* Footer */
+footer{
+  background: #000;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  background: #000;
+  padding: 3rem;
+  justify-content: space-around;
+  color: #ffff;
+}
+
+.footer-item,.footer-logo{
+  padding: 1em;
+}
+
+.footer-logo{
+  color: #fff;
+  margin-left: 6rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.footer-item .footer-heading{
+  color: #ffff;
+  opacity: .5;
+}
+
+.footer-item div{
+  padding: .7em;
+}
+
+.footer-item i{
+  font-size: 32px;
+  padding: .3em;
+  width: 55px;
+  margin: 0.1em;
+  border-radius: 50px;
+  background: rgba(110, 98, 98, 0.4);
+  text-align: center;
+}
+
+.footer-item i:hover,.footer a:hover{
+  color: #28cc9e;
+}
+
+.footer-item i:last-child{
+  font-size: 34px;
+}
+
+
+
+
+.footer-end{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #000;
+  color: #6f7474;
+  font-size: 13px;
+  padding: 3rem;
+}
+
+.footer-end ul{
+  margin-bottom: 1rem;
+}
+
+.footer-end ul li{
+  display: inline-block;
+  padding: .3em;
+}
+
+.footer-end a{
+  color: #6f7474;
+  font-size: 13px;
+  padding: .2em;
+}
+.footer-end a[href*="htt"]{
+  color: #ffff;
+}
+.footer-end a:hover[href*="htt"],.footer-end ul li a:hover{
+  color: #28cc9e;
+}
+.footer-end p{
+  padding: .2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QUERIES */  
+  /* For Mobile */
+  @media only screen and (max-width: 375px){
+    
+    .logo{
+      margin-left: 0 !important;
+    }
+
+    .main-cover{
+      margin: 4rem auto ;
+    } 
+
+     
+    .main-cover .cover-heading{
+     font-size: 4.2rem;
+    }
+
+
+    .template-heading{
+      font-size: 2.5rem;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1em;
+    }
+
+    .template-info{
+  
+      margin: 1rem;
+      padding: 1rem;
+    
+    }
+   
+    .mob-pic img{
+      left: 2% !important;
+      top: 60% !important;
+    }
+
+    a:hover span{
+      left: 6rem !important;
+     }
+  
+ 
+   }
+
+   @media only screen and (max-width: 600px){
+    .logo{
+      margin-left: 0 !important;
+    }
+
+  
+
+   }
+  
+  @media only screen and (max-width: 850px) {
+    .main-cover{
+      width: 100%;
+    }
+
+
+    .cover-btn{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn-1,.btn-2{
+      width: 100%;   
+     
+   }
+
+
+   .gallery{
+     flex-direction: column;
+   }
+
+   .template-info{
+     width: 100%;
+     height: auto;
+   }
+    
+   
+   .img-gallery{
+    width: 100% !important;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  figure{
+    width: 100%;
+  }
+
+   .hover03 figure img {
+     width: 100% !important;
+     
+   }
+
+
+   a:hover span{
+    left: 280px;
+   }
+
+
+   .mob-template{
+      height: 70rem;
+   }
+
+  .mob-pic img{
+    left: 5%;
+    top: 70%;
+  }
+
+  
+  }
+
+
+  @media only screen and (max-width: 1210px){
+
+    .Navbar__Items {
+        display: flex;
+        margin-left: 7rem;
+      }
+
+      .btn-1{
+        margin-left: 1rem !important;
+        
+    }
+
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+      background: #000;
+      
+    }
+    .logo{
+      margin-left: 3rem;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
+
+     .btn-1{
+       margin-left: 0 !important;
+     }
+
+
+
+  .img-gallery{
+    margin: 3rem auto;
+    width: 60%;
+
+  }
+
+  .hover03 figure img {
+     width: 200px;
+     height: 200px;
+  }
+
+    
+
+  .mob-pic img{
+    width: 350px;
+    height: 600px;
+
+  }
+
+
+  .list{
+   flex-direction: column;
+   width: 100%;
+   padding: 1rem;
+  }
+  .list-item h6{
+    font-size: 1.2rem;
+  }
+  .list-item{
+    width: 100%;
+  }
+
+
+
+
+.footer{
+    flex-direction: column;
+  }
+
+ .footer-logo{
+   margin-left: 0;
+   padding: 1.3em;
+ }
+
+}
+
+
+
+
+
